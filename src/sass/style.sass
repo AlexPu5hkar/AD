@@ -3,7 +3,7 @@
 
 body
     background-image: linear-gradient(90deg, #000000 0%, #552323 70%, #fc0808 90%)
-    width: 1520px
+    max-width: 1520px
 .title
     font-size: 70px
     color: #fff
@@ -29,11 +29,11 @@ body
 
 .header
     &__banner
-        width: 1530px
+        max-width: 1530px
         height: 290px
         background: url("../img/ad.png") center (center/cover) no-repeat
     &__links
-        width: 1100px
+        max-width: 1100px
         display: flex
         font-size: 28px
         font-weight: 900
@@ -51,7 +51,7 @@ body
     padding-bottom: 20px
     &__list
         display: flex
-        width: 1200px
+        max-width: 1200px
         justify-content: space-around
         margin: 0 auto
     &__item
@@ -70,7 +70,7 @@ body
 .music
     margin: 160px 20px 20px
     padding-bottom: 20px  
-    width: 900px
+    max-width: 900px
     margin: 0 auto
     &__audio
         margin-top: 70px
@@ -88,12 +88,11 @@ body
     margin: 0 auto
     &__content
         display: flex
-        width: 900px
+        max-width: 900px
         margin: 0 auto
         justify-content: center
 iframe
-    width: 500px
-    height: 250px
+    aspect-ratio: 16 / 9
     padding: 5px
     justify-content: space-between
     margin-top: 90px
@@ -105,7 +104,7 @@ iframe
     margin: 0 auto
     justify-content: center
     &__media
-        width: 900px
+        max-width: 900px
         display: flex
         justify-content: space-around
         margin: 0 auto
