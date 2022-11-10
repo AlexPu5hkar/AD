@@ -146,7 +146,39 @@ td
             transition: 2.5s ease-out
 
 
-    &__2
-    &__3
-    &__4
-       
+.weather
+    position: absolute
+    background-image: linear-gradient(39deg, #472047, #242624,)
+    border-radius: 30px
+    padding: 20px
+    max-width: 500px
+    margin: 0 auto
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+    &__loading
+        display: flex
+        justify-content: center
+        align-items: center
+    &__loading img
+        max-width: 150px
+    &__header
+        display: flex
+    &__main
+        flex: 1 1  auto
+    &__city
+        font-size: 40px
+        font-weight: 700
+        margin-bottom: 15px
+    &__status
+        font-size: 20px
+        margin-bottom: 20px
+    &__temp
+        font-size: 30px
+        font-weight: 700
+        margin-bottom: 10px
+.weather__temp:after,
+.weather__feels-like:after
+    display: inline-block
+    margin-left: 5px
+    content: "°C"
+            
+
