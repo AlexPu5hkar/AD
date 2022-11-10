@@ -63,7 +63,7 @@ body
     width: 350px
     height: 350px
     &__1
-        background: url("../img/cover_1.jpg") center (center/cover) no-repeat
+        background: url("../img/cover_1.jpg") center (center/cover) no-repeat     
     &__2
         background: url("../img/cover_2.jpg") center (center/cover) no-repeat
     &__3
@@ -86,10 +86,17 @@ body
     width: 1200px
     margin: 0 auto
     &__content
+        margin: 0 auto
+        display: flex
         margin-top: 90px
-        
-.iframe
-    
+        flex-wrap: wrap
+        justify-content: space-around
+
+.content__link
+    margin-bottom: 40px
+
+
+   
 .concerts
     &__table
         display: block
@@ -100,6 +107,12 @@ body
 .table__body
 td
     padding: 0 110px   
+.merchandise
+    height: 550px
+    &__text
+        padding-top: 200px
+
+   
 
 .footer
     background: rgba(0, 0, 0, 0.5)
@@ -127,7 +140,12 @@ td
 
 
 .media__items
-    &__1  
+    &__1 , &__2 ,&__3 , &__4  
+        &:hover
+            transform: rotate3d(0, 2, 0, 360deg)
+            transition: 2.5s ease-out
+
+
     &__2
     &__3
     &__4
