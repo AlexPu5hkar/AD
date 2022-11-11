@@ -3,7 +3,7 @@
 
 $main: #999696
 body
-    background-image: linear-gradient(90deg, #000000 0%, #140f38 30% #274ca1 60%, #064cf1 80%, #181b5e)
+    background-image: linear-gradient(90deg, #000000 0%, #140f38 30% #274ca1 60%, #064cf1 80%, #181b5e)     
     max-width: 1520px
 .title
     font-size: 70px
@@ -51,10 +51,11 @@ body
     margin: 160px 20px 20px
     padding-bottom: 20px
     &__list
-        display: flex
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        justify-items: center
+        margin: 0 auto 
         max-width: 1200px
-        justify-content: space-around
-        margin: 0 auto
     &__item
         max-width: 600Px
         margin-top: 60px
@@ -87,10 +88,9 @@ body
     margin: 0 auto
     &__content
         margin: 0 auto
-        display: flex
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
         margin-top: 90px
-        flex-wrap: wrap
-        justify-content: space-around
 
 .content__link
     margin-bottom: 40px
@@ -101,7 +101,7 @@ body
     &__table
         display: block
         width: 900px
-        justify-content: center
+        justify-items: start
         margin: 0 auto
         padding-top: 80px
 .table__body
@@ -116,18 +116,18 @@ td
 
 .footer
     background: rgba(0, 0, 0, 0.5)
-    height: 150px
+    height: 100px
     &__media
         width: 900px
         margin: 0 auto
         display: flex
-        padding-top: 63px
+        padding-top: 33px
         
     &__official
         text-decoration: none
         width: 300px
         margin: 0 auto
-        padding-top: 50px
+        padding-top: 30px
     &__copy
         width: 300px
         display: flex
@@ -146,39 +146,6 @@ td
             transition: 2.5s ease-out
 
 
-.weather
-    position: absolute
-    background-image: linear-gradient(39deg, #472047, #242624,)
-    border-radius: 30px
-    padding: 20px
-    max-width: 500px
-    margin: 0 auto
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
-    &__loading
-        display: flex
-        justify-content: center
-        align-items: center
-    &__loading img
-        max-width: 150px
-    &__header
-        display: flex
-    &__main
-        flex: 1 1  auto
-    &__city
-        font-size: 40px
-        font-weight: 700
-        margin-bottom: 15px
-    &__status
-        font-size: 20px
-        margin-bottom: 20px
-    &__temp
-        font-size: 30px
-        font-weight: 700
-        margin-bottom: 10px
-.weather__temp:after,
-.weather__feels-like:after
-    display: inline-block
-    margin-left: 5px
-    content: "°C"
+
             
 
